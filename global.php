@@ -4,6 +4,8 @@ function make($name)
 {
 	global $generators;
 	
+	if (!isset($generators[$name])) return;
+	
 	return $generators[$name]['function']();
 }
 
