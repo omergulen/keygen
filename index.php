@@ -72,6 +72,10 @@
 						?>
 					</div>
 				</div>
+				
+				<footer style="margin-bottom: 20px;">
+					Created by <a href="https://www.marktopper.com">Mark Topper</a> at <a href="https://www.webman.io">webman.io</a>.
+				</footer>
 			</div>
 		</div>
 	</div>
