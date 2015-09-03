@@ -95,7 +95,7 @@
 	{
 		$('#input-'+name).val('');
 		$.ajax({
-			url: "/api/"+name+".php"
+			url: "/api.php?name="+name
 		}).done(function(data)
 		{
 			$('#input-'+name).val(data);
