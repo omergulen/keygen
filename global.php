@@ -55,6 +55,12 @@ $generators = [
 			return random(15);
 		},
 	],
+	'verystrongpassword' => [
+		'name' => 'Very Strong Password',
+		'function' => function() {
+			return random(30);
+		},
+	],
 	'codeigniter' => [
 		'name' => 'CodeIgniter Encryption Key',
 		'function' => function() {

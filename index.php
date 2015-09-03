@@ -105,10 +105,9 @@
 		var value = $('#input-'+name).val();
 		window.prompt("Copy to clipboard: Ctrl+C, Enter", value);
 	}
-	generate('password');
-	generate('strongpassword');
-	generate('codeigniter');
-	generate('laravel');
+	<?php
+	foreach ($generators AS $key => $g) echo "generate('{$key}');";
+	?>
 	</script>
 
 	</body>
