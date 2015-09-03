@@ -32,7 +32,7 @@
 		<div class="row">
 			<div class="col-md-12">
 
-				<div class="componant-section" id="thumbnails">
+				<div class="componant-section" id="thumbnails" style="margin-bottom: 10px;">
 					<h2 class="demo-section-title">KeyGen.io - Random Key Generators</h2>
 					<div class="row">
 						<?php
