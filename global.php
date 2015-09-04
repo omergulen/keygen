@@ -72,7 +72,7 @@ $generators = [
 	'laravel' => [
 		'name' => 'Laravel Encryption Key',
 		'function' => function() {
-			return random(32);
+			return random(32, false, 'lud');
 		},
 	],
 ];
