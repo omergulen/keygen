@@ -24,7 +24,7 @@
 	<![endif]-->
 </head>
 <body data-spy="scroll" data-target="#sidenav" data-offset="100">
-	<div class="promo">
+	<div class="promo" style="background-color: #02BAF2;">
 		<p class="text-center">Don't got what you're looking for! <a href="mailto:mark@webman.io">Send us a mail</a>.</p>
 	</div>
 
