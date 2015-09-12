@@ -9,7 +9,7 @@ function make($name)
 	return $generators[$name]['function']();
 }
 
-function random($length = 9, $add_dashes = false, $available_sets = 'luds')
+function random($length = 9, $add_dashes = false, $available_sets = 'luds', $special_chars = '!@#$%&*?')
 {
 	$sets = array();
 	if(strpos($available_sets, 'l') !== false)
@@ -19,7 +19,7 @@ function random($length = 9, $add_dashes = false, $available_sets = 'luds')
 	if(strpos($available_sets, 'd') !== false)
 		$sets[] = '23456789';
 	if(strpos($available_sets, 's') !== false)
-		$sets[] = '!@#$%&*?';
+		$sets[] = $special_chars;
 	$all = '';
 	$password = '';
 	foreach($sets as $set)
@@ -74,5 +74,11 @@ $generators = [
 		'function' => function() {
 			return random(32, false, 'lud');
 		},
+	],
+	'wordpress' => [
+		'name' => 'Wordpress Key',
+		'function' => function() {
+			return random(64, false, 'luds', '$!#%&/()=*@-_.:,; <>');
+		}
 	],
 ];
