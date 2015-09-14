@@ -48,8 +48,7 @@
 								        <h4><?php echo $g['name']; ?></h4>
 								        <p>
 									        <div class="form-group" style="padding-bottom: 40px;">
-												<label class="col-sm-2 control-label">Key</label>
-												<div class="col-sm-10">
+												<div class="col-sm-12">
 													<div class="input-icon">
 														<span class="fa fa-key"></span>
 														<input id="input-<?php echo $key; ?>" type="text" class="form-control" placeholder="generating...">
