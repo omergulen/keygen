@@ -73,7 +73,7 @@
 				</div>
 				
 				<footer style="margin-bottom: 20px;">
-					Created by <a href="https://www.marktopper.com">Mark Topper</a> at <a href="https://www.webman.io">webman.io</a>.
+					Created by <a href="https://www.marktopper.com">Mark Topper</a> at <a href="https://www.webman.io">webman.io</a>. Source available at <a href="https://github.com/marktopper/keygen.io">Github</a>.
 				</footer>
 			</div>
 		</div>
