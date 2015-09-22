@@ -24,6 +24,16 @@
 	<![endif]-->
 </head>
 <body data-spy="scroll" data-target="#sidenav" data-offset="100">
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-45963832-8', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
 	<div class="promo" style="background-color: #02BAF2;">
 		<p class="text-center">Don't got what you're looking for! <a href="mailto:mark@webman.io">Send us a mail</a>.</p>
 	</div>
