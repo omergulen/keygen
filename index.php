@@ -59,7 +59,7 @@
                             ?></h4>
 								        <p>
 									        <div class="form-group" style="padding-bottom: 40px;">
-												<div class="col-sm-12">
+												<div class="col-sm-12" style="padding: 0;">
 													<div class="input-icon">
 														<span class="fa fa-key"></span>
 														<input id="input-<?php echo $key;
