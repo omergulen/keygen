@@ -35,7 +35,7 @@
 	
 	</script>
 	<div class="promo" style="background-color: #02BAF2;">
-		<p class="text-center">Don't got what you're looking for! <a href="mailto:mark@webman.io">Send us a mail</a>.</p>
+		<p class="text-center">Don't got what you're looking for! <a href="mailto:mark@ulties.com">Send us a mail</a> or <a href="https://github.com/marktopper/keygen">contribute on Github</a>.</p>
 	</div>
 
 	<div class="container">
