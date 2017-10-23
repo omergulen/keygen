@@ -77,6 +77,17 @@ function generateRandomWEPKey($bits)
     }
 }
 
+function generateRandomWEPKey($letters)
+{
+    $randomnumber = rand(0,5000)
+    if($randomnumber > $letters){
+        $key = $randomnumber * $letters;
+    } else {
+        $key = $randomnumber * $letters * 987123546;
+    }
+    return $key;    
+}
+
 $generators = [
     'password' => [
         'name'     => 'Decent Password',
@@ -148,6 +159,12 @@ $generators = [
         'name'     => 'WEP 256-bit Key',
         'function' => function () {
             return generateRandomWEPKey(256);
+        },
+    ],
+    'omergulen' => [
+        'name'     => '@omergulen\' Number Key',
+        'function' => function () {
+            return omergulenKey(1333); // IEEE İYTE <3
         },
     ],
 ];
