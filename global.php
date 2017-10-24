@@ -81,9 +81,11 @@ function generateRandomSHAKey($bits)
 {
     $random_pass = random(15);
     
-    if($bits == 256){
+    if($bits == 256) {
+        
         return hash('sha256',$random_pass);
-    } else if($bits == 128){
+    } else if($bits == 128) {
+        
         return hash('md5',$random_pass);
     } else {
         return;
