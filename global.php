@@ -85,7 +85,19 @@ function generateRandomWEPKey($letters)
     } else {
         $key = $randomnumber * $letters * 987123546;
     }
-    return $key;    
+    return $key;   
+}
+
+function generateRandomSHAKey($bits)
+{
+    $random_pass = random(15);
+    if ($bits == 256) {
+        return hash('sha256', $random_pass);
+    } else if ($bits == 128) {
+        return hash('md5', $random_pass);
+    } else {
+        return;
+    }
 }
 
 $generators = [
@@ -165,6 +177,20 @@ $generators = [
         'name'     => '@omergulen\' Number Key',
         'function' => function () {
             return omergulenKey(1333); // IEEE İYTE <3
+        },
+    ],
+
+    'sha256' => [
+        'name'     => 'SHA 256-bit Key',
+        'function' => function () {
+            return generateRandomSHAKey(256);
+        },
+    ],
+
+    'sha128' => [
+        'name'     => 'SHA 128-bit Key',
+        'function' => function () {
+            return generateRandomSHAKey(128);
         },
     ],
 ];
