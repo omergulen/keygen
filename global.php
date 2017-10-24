@@ -77,7 +77,7 @@ function generateRandomWEPKey($bits)
     }
 }
 
-function generateRandomWEPKey($letters)
+function omergulenKey($letters)
 {
     $randomnumber = rand(0,5000)
     if($randomnumber > $letters){
